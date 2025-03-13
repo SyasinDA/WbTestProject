@@ -24,7 +24,7 @@ public class FirstTest {
     }
 
     @Test
-    public void testAddProduct() throws InterruptedException {
+    public void testAddProduct() {
         productPage = new ProductPage(driver);
         basketPage = new BasketPage(driver);
         //Step 1 Откроем страницу

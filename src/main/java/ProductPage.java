@@ -4,7 +4,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class ProductPage {
-    private WebDriver driver;
     private WebDriverWait wait;
     //локатор для добавления товара в корзину
     private By addToBasket = By.xpath("//div[@class='product-page__order-buttons']//button[@aria-label='Добавить в корзину']");
@@ -14,7 +13,6 @@ public class ProductPage {
     private By moveToBasket = By.xpath("//div[@class='product-page__order-buttons']//a[@class='order__button btn-base j-go-to-basket']");
 
     public ProductPage(WebDriver driver) {
-        this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 

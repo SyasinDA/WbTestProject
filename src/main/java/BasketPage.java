@@ -8,14 +8,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class BasketPage {
-    private WebDriver driver;
     private WebDriverWait wait;
 
     private By titleBasket = By.xpath("//h1[@class='basket-section__header basket-section__header--main active']");
     private By productInBasket = By.xpath("//div[@class='list-item__wrap']");
 
     public BasketPage(WebDriver driver) {
-        this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
